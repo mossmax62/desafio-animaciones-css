@@ -113,3 +113,68 @@ footer {
     align-items: center;
     color: white;
 }
+.menu-container{
+    display: none;
+}
+@media(min-width:576px){
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "menu filtro filtro"
+        "menu contenido contenido"
+        "footer contenido contenido"
+        "footer contenido contenido";
+        grid-template-columns: 2fr 8fr;
+    }
+    
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        background-color: blue;
+    }
+    .filtro{
+        grid-area: filtro;
+    }
+    nav{
+        grid-area: menu;
+    }
+    .contenido{
+        grid-area: contenido;
+        
+    }
+    .mdi-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 80vh;
+    }
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .single-car-container{
+        display: none;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow: scroll;
+    }
+    img{
+        width: 50%;
+    }
+}
