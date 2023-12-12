@@ -112,8 +112,13 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
+    text-align: center;
+    background-color: blue;
 }
 .menu-container{
+    display: none;
+}
+.gallery{
     display: none;
 }
 @media(min-width:576px){
@@ -126,6 +131,8 @@ footer {
         "footer contenido contenido"
         "footer contenido contenido";
         grid-template-columns: 2fr 8fr;
+        grid-template-rows: 1fr 6fr;
+
     }
     
     footer{
@@ -140,12 +147,18 @@ footer {
     }
     .filtro{
         grid-area: filtro;
+        height: 100px;
+        
     }
     nav{
         grid-area: menu;
     }
+    .main-area{
+
+    }
     .contenido{
         grid-area: contenido;
+        
         
     }
     .mdi-menu{
@@ -156,7 +169,7 @@ footer {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        height: 80vh;
+        
     }
     .menu-container{
         display: flex;
@@ -169,12 +182,19 @@ footer {
     .single-car-container{
         display: none;
     }
+    .car-container{
+        border: solid 1px black;
+    }
     .gallery{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         overflow: scroll;
+        gap: 10px;
+        padding: 15px;
+        height: 100%;
+        
     }
     img{
-        width: 50%;
+        width: 75%;
     }
 }
