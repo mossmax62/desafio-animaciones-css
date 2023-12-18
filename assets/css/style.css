@@ -46,6 +46,7 @@ nav .logo-container {
     height: 100%;
     
     background-image: url("../img/triumph_street_triple_675_sepia.jpeg");
+    transition: background-image 0.8s ease-in-out;
 }
 
 .moto:hover{
@@ -180,6 +181,10 @@ iframe{
         grid-template-rows: 2fr  8fr;
 
     }
+    nav a{
+        text-decoration: none;
+        color: #8B0000;
+    }
     .video{
         display: flex;
         flex-direction: column;
@@ -261,6 +266,7 @@ iframe{
         background-image: url("../img/triumph_street_triple_675_sepia.jpeg");
         background-repeat: no-repeat, repeat;
         background-size: 100% 100%;
+        transition: background-image 0.8s ease-in-out;
 
     }
     .car-container .moto:hover{
