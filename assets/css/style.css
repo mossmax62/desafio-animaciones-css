@@ -141,6 +141,9 @@ footer {
     text-align: center;
     background-color: black;
 }
+footer a{
+    text-decoration: none;
+}
 .menu-container{
     display: none;
 }
